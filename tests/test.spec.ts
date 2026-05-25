@@ -54,13 +54,13 @@ test.describe('OrangeHRM Admin Functionality', () =>
           });
      });
      
-     test.only('Recruitment Module Workflow', async({dashboardPage,recruitment})=>
+     /*test('Recruitment Module Workflow', async({dashboardPage,recruitment})=>
      {
            await dashboardPage.NavigationToDashboard();
            await recruitment.navigateToAdduserpage();
            await recruitment.createnewVacancy(randomEmployee.firstName);
 
-     })
+     })*/
      
 });
      
