@@ -44,14 +44,14 @@ test.describe('OrangeHRM Admin Functionality', () =>
           await employeeDetails.UpdatingDetails();
           //await expect(employeeDetails.successpopup).toContainText('Success');
 
-          test('Admin User Management Flow', async({dashboardPage,admin})=>
-          {
-               await dashboardPage.NavigationToDashboard();
-               await admin.navigateToAdduserpage();
+         
+     });
 
-               await admin.creatNewuser(randomEmployee.firstName, randomEmployee.username, randomEmployee.password);
-          
-          });
+     test('Admin User Management Flow', async({dashboardPage,admin})=>
+     {
+          await dashboardPage.NavigationToDashboard();
+          await admin.navigateToAdduserpage();
+          await admin.creatNewuser(randomEmployee.firstName, randomEmployee.username, randomEmployee.password);
      });
      
      /*test('Recruitment Module Workflow', async({dashboardPage,recruitment})=>
